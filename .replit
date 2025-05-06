@@ -1,12 +1,12 @@
 language = "c"
-run = "gcc -o lab2-1 /home/runner/lab2-task1-gr10-petrakov/src/main.c"
+run = "gcc src/main.c -o output && ./output"
 modules = ["c-clang14"]
 
 [deployment]
 run = [
   "sh",
   "-c",
-  "gcc -o hello /home/runner/lab2-task1-gr10-petrakov/src/main.c",
+  "gcc src/main.c -o output && ./output",
 ]
 
 [nix]
